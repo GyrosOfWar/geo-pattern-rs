@@ -1,0 +1,10 @@
+[package]
+name = "geopattern"
+version = "0.0.1"
+authors = ["Martin Tomasi <martin.tomasi@gmail.com>"]
+
+[dependencies.color]
+git = "https://github.com/bjz/color-rs.git"
+
+[[bin]]
+name = "main"
