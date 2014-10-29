@@ -6,5 +6,8 @@ authors = ["Martin Tomasi <martin.tomasi@gmail.com>"]
 [dependencies.color]
 git = "https://github.com/bjz/color-rs.git"
 
+[dependencies.rust-crypto]
+git = "https://github.com/DaGenix/rust-crypto.git"
+
 [[bin]]
 name = "main"

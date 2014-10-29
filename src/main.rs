@@ -1,7 +1,10 @@
+#![feature(slicing_syntax)]
+
 use svg::Svg;
 use std::collections::HashMap;
 
 pub mod svg;
+pub mod pattern;
 
 fn main() {
 	let mut svg = Svg::new(800u, 800u);

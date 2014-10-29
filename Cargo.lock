@@ -2,11 +2,17 @@
 name = "geopattern"
 version = "0.0.1"
 dependencies = [
- "color 0.0.1 (git+https://github.com/bjz/color-rs.git#870e1252a660e145b755ed1ef23c46a0c71e8d84)",
+ "color 0.0.1 (git+https://github.com/bjz/color-rs.git)",
+ "rust-crypto 0.1.0 (git+https://github.com/DaGenix/rust-crypto.git)",
 ]
 
 [[package]]
 name = "color"
 version = "0.0.1"
 source = "git+https://github.com/bjz/color-rs.git#870e1252a660e145b755ed1ef23c46a0c71e8d84"
+
+[[package]]
+name = "rust-crypto"
+version = "0.1.0"
+source = "git+https://github.com/DaGenix/rust-crypto.git#4105f2a180701f67905939a2260b1fd0832fe253"
 
