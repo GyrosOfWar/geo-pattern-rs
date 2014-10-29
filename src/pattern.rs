@@ -21,14 +21,17 @@ enum PatternType {
 
 struct Pattern {
     svg: Svg,
-    hash: String
+    hash: String,
+    pattern_type: PatternType,
+    // TODO color, background color
 }
 
 impl Pattern {
-    fn new(x_size: uint, y_size: uint, hash: String) -> Pattern {
+    fn new(x_size: uint, y_size: uint, hash: String, pattern_type: PatternType) -> Pattern {
         Pattern {
             svg: Svg::new(x_size, y_size),
-            hash: hash
+            hash: hash,
+            pattern_type: pattern_type
         }
     }
 }
