@@ -27,7 +27,7 @@ impl Svg {
 	fn format_args(args: &HashMap<String, String>) -> String {
 		let mut result = String::new();
 		for (k, v) in args.iter() {
-			result.push_str(format!("{}='{}'' ", k, v).as_slice());
+			result.push_str(format!("{}='{}' ", k, v).as_slice());
 		}
 
 		result
@@ -75,6 +75,12 @@ impl fmt::Show for Svg {
 	fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
 		write!(fmt, "{}{}{}", self.header(), self.data, self.footer())
 	}
+}
+
+impl ToString for Svg {
+    fn to_string(&self) -> String {
+        format!("{:?}", self)
+    }
 }
 
 #[test]

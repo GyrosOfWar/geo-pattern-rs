@@ -19,7 +19,7 @@ enum PatternType {
     Chevrons
 }
 
-struct Pattern {
+pub struct Pattern {
     svg: Svg,
     hash: String,
     pattern_type: PatternType,
